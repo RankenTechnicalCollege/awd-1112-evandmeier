@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ed452a7-023d-49ff-b97a-07c3034e89c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Problem7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

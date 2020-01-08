@@ -8,7 +8,7 @@ public class Problem7 {
                 System.out.printf("%4d", i *j);
             }
 
-            System.out.println();
+            System.out.println("test");
         }
     }
 }
