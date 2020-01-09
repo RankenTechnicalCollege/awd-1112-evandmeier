@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ed452a7-023d-49ff-b97a-07c3034e89c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Problem8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Problem10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Problem11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Problem12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Problem13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Problem14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Problem9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problem7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,37 +35,37 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Problem8">
-    <configuration name="Problem4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Problem4" />
+  <component name="RunManager" selected="Application.Problem14">
+    <configuration name="Problem10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Problem10" />
       <module name="ConsolePrograms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Problem5" />
+    <configuration name="Problem11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Problem11" />
       <module name="ConsolePrograms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Problem6" />
+    <configuration name="Problem12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Problem12" />
       <module name="ConsolePrograms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Problem7" />
+    <configuration name="Problem13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Problem13" />
       <module name="ConsolePrograms" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Problem8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Problem8" />
+    <configuration name="Problem14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Problem14" />
       <module name="ConsolePrograms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,11 +73,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Problem8" />
-        <item itemvalue="Application.Problem7" />
-        <item itemvalue="Application.Problem6" />
-        <item itemvalue="Application.Problem5" />
-        <item itemvalue="Application.Problem4" />
+        <item itemvalue="Application.Problem14" />
+        <item itemvalue="Application.Problem13" />
+        <item itemvalue="Application.Problem11" />
+        <item itemvalue="Application.Problem12" />
+        <item itemvalue="Application.Problem10" />
       </list>
     </recent_temporary>
   </component>
@@ -111,49 +115,49 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2447" y="135" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578512515033" />
-    <state width="1877" height="294" key="GridCell.Tab.0.bottom" timestamp="1578517952193">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1578597762476">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578517952193" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1578492856447" />
-    <state width="1877" height="294" key="GridCell.Tab.0.center" timestamp="1578517952193">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578597762476" />
+    <state width="1493" height="222" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1578582717463" />
+    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1578597762474">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578517952193" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1578492856447" />
-    <state width="1877" height="294" key="GridCell.Tab.0.left" timestamp="1578517952193">
+    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578597762474" />
+    <state width="1493" height="222" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1578582717462" />
+    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1578597762474">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578517952193" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1578492856447" />
-    <state width="1877" height="294" key="GridCell.Tab.0.right" timestamp="1578517952193">
+    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578597762474" />
+    <state width="1493" height="222" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1578582717462" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1578597762475">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578517952193" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1578492856447" />
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1578509182887">
+    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578597762475" />
+    <state width="1493" height="222" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1578582717462" />
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1578597681413">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578509182887" />
-    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1578509182887">
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578597681413" />
+    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1578597681412">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578509182887" />
-    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1578509182887">
+    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578597681412" />
+    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1578597681412">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578509182887" />
-    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1578509182887">
+    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578597681412" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1578597681413">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578509182887" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578597681413" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1578473861702">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1578473861702" />
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1578512747088">
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1578596560835">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578512747088" />
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578596560835" />
   </component>
 </project>
