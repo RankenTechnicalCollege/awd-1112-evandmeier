@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Problem19 {
 
+    // #19 : Write a function that concatenates two lists and returns the combined list. [a,b,c], [1,2,3] → [a,b,c,1,2,3]
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<Integer>() {
             {
