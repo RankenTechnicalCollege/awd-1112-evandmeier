@@ -18,11 +18,17 @@ public class Problem12 {
 
         System.out.println("The original ArrayList: " + integers.toString());
 
-        Collections.reverse(integers);
-        System.out.println("Reversed ArrayList using Collections.reverse(): " + integers.toString());
+        reverseListInPlace(integers);
+        System.out.println("Reversed ArrayList using create .reverseListInPlace(): " + integers.toString());
 
         integers = reverseList(integers);
         System.out.println("Reversing back to original ArrayList using created .reverseList(): " + integers.toString());
+    }
+
+    public static <T> void reverseListInPlace(ArrayList<T> list) {
+        for (int i = 0, j = list.size() - 1; i < j; ++i) {
+            list.add(i, list.remove(j));
+        }
     }
 
     public static <T> ArrayList<T> reverseList(ArrayList<T> list) {
