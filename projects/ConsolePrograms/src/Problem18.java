@@ -1,7 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Problem18 {
+
+//    public interface PerfectSquare {
+//        boolean check(int x);
+//    }
 
     /*
         Write a function 'apply' that applies a function to every element of a list. Use it to print the first twenty
@@ -9,7 +14,6 @@ public class Problem18 {
         first few perfect squares are 1*1= 1, 2*2=4, 3*3=9, 4*4=16. Twelve for example is not a perfect square
         because there is no natural number m so that m*m=12.
      */
-
     public static void main(String[] args) {
         ArrayList<Integer> integers = new ArrayList<Integer>() {
             {
@@ -21,36 +25,45 @@ public class Problem18 {
             }
         };
 
-        for (int element : integers) {
-            StringBuilder outputString =
-                    new StringBuilder(String.format("The first 20 perfect squares preceding '%d' are: ",
-                                                    element));
-
-            for (int perfectSquare : apply(element)) {
-                outputString.append(perfectSquare + " ");
+        Predicate<Integer> checkPerfectSquare = (Integer x) -> {
+            for (int i = 1; i < x; ++i) {
+                if (i * i == x) {
+                    return true;
+                }
             }
 
-            System.out.println(outputString);
+            return false;
+        };
+
+        for (int i = 0; i < apply(integers, checkPerfectSquare).size(); i++) {
+            System.out.printf("The first 20 perfect squares preceding %d are: ", integers.get(i));
+            for (Integer element : apply(integers, checkPerfectSquare).get(i)) {
+                System.out.print(element);
+                System.out.print(" ");
+            }
+            System.out.println();
         }
     }
 
-    public static ArrayList<Integer> apply(int number) {
-        ArrayList<Integer> perfectSquares = new ArrayList<Integer>();
+    public static List<List<Integer>> apply(List<Integer> integers, Predicate<Integer> f) {
+        List<List<Integer>> returnList = new ArrayList<>();
 
-        outsideLoop : for (int i = 1; i < number; ++i) {
-            for (int j = 1; j < i; ++j) {
-                if (j * j == i) {
-                    perfectSquares.add(i);
+        for (int element : integers) {
+            int count = 0;
+            List<Integer> list = new ArrayList<>();
 
-                    if (perfectSquares.size() < 19) {
-                        continue outsideLoop;
-                    } else {
-                        break outsideLoop;
+            for (int i = 1; i < element; ++i) {
+                if (count < 20) {
+                    if (f.test(i)) {
+                        list.add(i);
+                        count++;
                     }
                 }
             }
+
+            returnList.add(list);
         }
 
-        return perfectSquares;
+        return returnList;
     }
 }

@@ -10,7 +10,7 @@ public class Problem3 {
         String name = scanner.nextLine();
 
         if (name.equalsIgnoreCase("Alice") || name.equalsIgnoreCase("Bob")) {
-            System.out.println("Hello, " + name);
+            System.out.println("Hello, " + name + "!");
         }
     }
 }

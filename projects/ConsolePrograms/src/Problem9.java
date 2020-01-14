@@ -6,14 +6,14 @@ public class Problem9 {
         EXCEPTION ^ if the year is divisible by 400 (1600, 2000, 2400, etc)
      */
     public static void main(String[] args) {
-        String result = "The next 20 leap years are: ";
-        int leapYearCount = 0;
-        int currentYear = 2020;
+        StringBuilder result = new StringBuilder("The next 20 leap years are: ");
 
-        while(leapYearCount < 20) {
-            boolean isLeapYear = false;
+        for (int currentYear = 2020, leapYearCount = 0; leapYearCount < 20; currentYear++) {
+            boolean isLeapYear =
+                    (currentYear % 400 == 0) ||
+                    (currentYear % 100 != 0 && currentYear % 4 == 0);
 
-            if (currentYear % 400 == 0) {
+            /*if (currentYear % 400 == 0) {
                 isLeapYear = true;
             } else if (currentYear % 100 == 0) {
                 isLeapYear = false;
@@ -21,17 +21,16 @@ public class Problem9 {
                 isLeapYear = true;
             } else {
                 isLeapYear = false;
-            }
+            }*/
 
             if (isLeapYear) {
                 ++leapYearCount;
                 if (leapYearCount == 20) {
-                    result += "and " + currentYear + ".";
+                    result.append("and ").append(currentYear).append(".");
                 } else {
-                    result += currentYear + ", ";
+                    result.append(currentYear).append(", ");
                 }
             }
-            currentYear++;
         }
 
         System.out.println(result);

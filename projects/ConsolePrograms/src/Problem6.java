@@ -24,7 +24,7 @@ public class Problem6 {
         } while(!isNumberEntered);
 
         //This loop handles entry errors for the second prompt
-        boolean isCalculationPerformed = false;
+        boolean isDone = false;
         String input = null;
         do {
             if (input == null) {
@@ -36,7 +36,7 @@ public class Problem6 {
             if ("".equals(input)) {
                 // do nothing
             } else if ("-1".equals(input)) {
-              isCalculationPerformed = true;
+              isDone = true;
             } else if ("+".equals(input)) {
                 int sum = 0;
                 for (int i = 1; i <= enteredNumber; i++) {
@@ -63,7 +63,7 @@ public class Problem6 {
                 System.out.println("Enter '+' for addition, or '*' for multiplication.");
                 System.out.println();
             }
-        } while(!isCalculationPerformed);
+        } while(!isDone);
     }
 
 }

@@ -20,22 +20,36 @@ public class Problem16 {
         EX: Able was I ere I saw Elba
         So essentially, we just have to check to see if the reverse of a string is the same as its original sequence.
      */
-
     public static boolean isPalindrome(String string) {
-        if (string.equalsIgnoreCase(reverseString(string))) {
+        if (string.equalsIgnoreCase(reverse(string))) {
             return true;
         }
 
         return false;
     }
 
-    public static String reverseString(String string) {
-        String reverseString = "";
+    public static String reverse(String string) {
+        char[] chars = string.toCharArray();
 
-        for (int i = string.length() - 1; i >= 0; --i) {
-            reverseString += string.charAt(i);
+        for (int i = 0; i < (chars.length / 2); i++) {
+            int endIndex = chars.length - 1 - i;
+            char start = chars[i];
+            char end = chars[endIndex];
+
+            chars[i] = end;
+            chars[endIndex] = start;
         }
 
-        return reverseString;
+        return chars.toString();
+    }
+
+    public static String reverseString(String string) {
+        StringBuilder reverseString = new StringBuilder(string.length());
+
+        for (int i = string.length() - 1; i >= 0; --i) {
+            reverseString.append(string.charAt((i)));
+        }
+
+        return reverseString.toString();
     }
 }

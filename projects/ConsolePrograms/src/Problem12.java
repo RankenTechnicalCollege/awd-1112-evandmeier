@@ -13,21 +13,27 @@ public class Problem12 {
                 add(50);
                 add(33);
                 add(14);
+                add(222);
             }
         };
 
         System.out.println("The original ArrayList: " + integers.toString());
 
-        reverseListInPlace(integers);
+        reverse(integers);
         System.out.println("Reversed ArrayList using create .reverseListInPlace(): " + integers.toString());
 
         integers = reverseList(integers);
         System.out.println("Reversing back to original ArrayList using created .reverseList(): " + integers.toString());
     }
 
-    public static <T> void reverseListInPlace(ArrayList<T> list) {
-        for (int i = 0, j = list.size() - 1; i < j; ++i) {
-            list.add(i, list.remove(j));
+    public static <T> void reverse(ArrayList<T> list) {
+        for (int i = 0; i < (list.size() / 2); i++) {
+            int endIndex = list.size() - 1 - i;
+            T start = list.get(i);
+            T end = list.get(endIndex);
+
+            list.set(i, end);
+            list.set(endIndex, start);
         }
     }
 

@@ -5,11 +5,11 @@ public class Problem8 {
         // Prime numbers are positive numbers that only divisible by itself and 1
 
         // loop through all numbers from 1 - 1,000,000
-        for (int i = 2; i < 1_000_100; i++) {
+        for (int i = 2; i < 1_000_000; i++) {
             // loop through all numbers from 2 (the first prime number) to i
             boolean isPrime = true;
 
-            for (int j = 2; j < i; j++) {
+            for (int j = 2, sqrt = (int) Math.sqrt(i); j < sqrt; j++) {
                 // break the loop if the numbers are divisible
                 if (i % j == 0) {
                     isPrime = false;

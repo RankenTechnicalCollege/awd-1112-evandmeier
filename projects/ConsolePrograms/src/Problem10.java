@@ -12,7 +12,7 @@ public class Problem10 {
 
     public static void main(String[] args) {
         // Holds a list of already guessed inputs (prevents duplications on guessCount)
-        ArrayList<Integer> guesses = new ArrayList<Integer>();
+        ArrayList<Integer> guesses = new ArrayList<>();
 
         // Holds the number of guesses for each game
         int guessCount = 0;

@@ -16,11 +16,11 @@ public class Problem15 {
         System.out.printf("The sum of elements in the ArrayList is %f", computeTotal(doubles));
     }
 
-    public static double computeTotal(ArrayList<Double> list) {
+    public static <T extends Number> double computeTotal(ArrayList<T> list) {
         double sum = 0;
 
-        for (double element : list) {
-            sum += element;
+        for (T element : list) {
+            sum += element.doubleValue();
         }
 
         return sum;
