@@ -31,8 +31,7 @@ public class Problem16 {
     public static String reverse(String string) {
         char[] chars = string.toCharArray();
 
-        for (int i = 0; i < (chars.length / 2); i++) {
-            int endIndex = chars.length - 1 - i;
+        for (int i = 0, endIndex = chars.length - 1; i < (chars.length / 2); i++, endIndex--) {
             char start = chars[i];
             char end = chars[endIndex];
 
@@ -40,16 +39,6 @@ public class Problem16 {
             chars[endIndex] = start;
         }
 
-        return chars.toString();
-    }
-
-    public static String reverseString(String string) {
-        StringBuilder reverseString = new StringBuilder(string.length());
-
-        for (int i = string.length() - 1; i >= 0; --i) {
-            reverseString.append(string.charAt((i)));
-        }
-
-        return reverseString.toString();
+        return new String(chars);
     }
 }

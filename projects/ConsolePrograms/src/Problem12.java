@@ -1,7 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
 
 public class Problem12 {
 
@@ -19,16 +16,15 @@ public class Problem12 {
 
         System.out.println("The original ArrayList: " + integers.toString());
 
-        reverse(integers);
+        reverseInPlace(integers);
         System.out.println("Reversed ArrayList using create .reverseListInPlace(): " + integers.toString());
 
         integers = reverseList(integers);
         System.out.println("Reversing back to original ArrayList using created .reverseList(): " + integers.toString());
     }
 
-    public static <T> void reverse(ArrayList<T> list) {
-        for (int i = 0; i < (list.size() / 2); i++) {
-            int endIndex = list.size() - 1 - i;
+    public static <T> void reverseInPlace(ArrayList<T> list) {
+        for (int i = 0, endIndex = list.size() - 1; i < (list.size() / 2); i++, endIndex--) {
             T start = list.get(i);
             T end = list.get(endIndex);
 
