@@ -24,7 +24,7 @@ public class Problem12 {
     }
 
     public static <T> void reverseInPlace(ArrayList<T> list) {
-        for (int i = 0, endIndex = list.size() - 1; i < (list.size() / 2); i++, endIndex--) {
+        for (int i = 0, endIndex = list.size() - 1; i < endIndex; i++, endIndex--) {
             T start = list.get(i);
             T end = list.get(endIndex);
 
