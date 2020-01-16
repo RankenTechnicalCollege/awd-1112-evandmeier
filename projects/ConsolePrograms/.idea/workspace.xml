@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8ed452a7-023d-49ff-b97a-07c3034e89c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problem12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Problem16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem16.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problem18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem18.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problem19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem19.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problem20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem20.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,23 +32,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.CodeWars">
+  <component name="RunManager" selected="Application.Problem20">
     <configuration name="CodeWars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CodeWars" />
-      <module name="ConsolePrograms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Problem12" />
-      <module name="ConsolePrograms" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Problem13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Problem13" />
       <module name="ConsolePrograms" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -67,13 +54,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Problem19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Problem19" />
+      <module name="ConsolePrograms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Problem20" />
+      <module name="ConsolePrograms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Problem20" />
+        <item itemvalue="Application.Problem19" />
+        <item itemvalue="Application.Problem18" />
         <item itemvalue="Application.CodeWars" />
         <item itemvalue="Application.Problem16" />
-        <item itemvalue="Application.Problem18" />
-        <item itemvalue="Application.Problem12" />
-        <item itemvalue="Application.Problem13" />
       </list>
     </recent_temporary>
   </component>
@@ -116,32 +117,32 @@
     </state>
     <state x="2447" y="135" key="CommitChangelistDialog2/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1578512515033" />
     <state x="422" y="56" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1578936442331" />
-    <state width="1877" height="381" key="GridCell.Tab.0.bottom" timestamp="1579127350467">
+    <state width="1877" height="381" key="GridCell.Tab.0.bottom" timestamp="1579204989234">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="291" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@0.0.1536.864" timestamp="1578939799631" />
-    <state width="1877" height="381" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1579127350467" />
+    <state width="1877" height="381" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1579204989234" />
     <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@3840.0.1920.1080" timestamp="1578954251645" />
     <state width="1493" height="291" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1578937385794" />
-    <state width="1877" height="381" key="GridCell.Tab.0.center" timestamp="1579127350466">
+    <state width="1877" height="381" key="GridCell.Tab.0.center" timestamp="1579204989233">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="291" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@0.0.1536.864" timestamp="1578939799623" />
-    <state width="1877" height="381" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1579127350466" />
+    <state width="1877" height="381" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1579204989233" />
     <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@3840.0.1920.1080" timestamp="1578954251645" />
     <state width="1493" height="291" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1578937385793" />
-    <state width="1877" height="381" key="GridCell.Tab.0.left" timestamp="1579127350466">
+    <state width="1877" height="381" key="GridCell.Tab.0.left" timestamp="1579204989233">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="291" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@0.0.1536.864" timestamp="1578939799621" />
-    <state width="1877" height="381" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1579127350466" />
+    <state width="1877" height="381" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1579204989233" />
     <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@3840.0.1920.1080" timestamp="1578954251645" />
     <state width="1493" height="291" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1578937385793" />
-    <state width="1877" height="381" key="GridCell.Tab.0.right" timestamp="1579127350467">
+    <state width="1877" height="381" key="GridCell.Tab.0.right" timestamp="1579204989234">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="291" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@0.0.1536.864" timestamp="1578939799626" />
-    <state width="1877" height="381" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1579127350467" />
+    <state width="1877" height="381" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@1920.0.1920.1080" timestamp="1579204989234" />
     <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1920.1080/3840.0.1920.1080@3840.0.1920.1080" timestamp="1578954251645" />
     <state width="1493" height="291" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1578937385794" />
     <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1578954251646">

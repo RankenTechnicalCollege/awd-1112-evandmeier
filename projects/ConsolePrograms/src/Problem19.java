@@ -31,14 +31,14 @@ public class Problem19 {
 
         See 'Bounded Type Parameters' in the GENERICS section of the Java Quick Syntax Reference.
      */
-    public static <T, R extends T, S extends T> List<T> combine(List<R> listA, List<S> listB) {
+    public static <T> List<T> combine(List<? extends T> listA, List<? extends T> listB) {
         List<T> newList = new ArrayList<T>();
 
-        for (R element : listA) {
+        for (T element : listA) {
             newList.add(element);
         }
 
-        for (S element : listB) {
+        for (T element : listB) {
             newList.add(element);
         }
 

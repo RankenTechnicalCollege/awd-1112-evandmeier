@@ -26,7 +26,7 @@ public class Problem20 {
         System.out.println(combineAlternate(integers, strings).toString());
     }
 
-    public static <T, R extends T, S extends T> List<T> combineAlternate(List<R> listA, List<S> listB) {
+    public static <T> List<T> combineAlternate(List<? extends T> listA, List<? extends T> listB) {
         List<T> newList = new ArrayList<T>();
 
         // return the higher of the two sizes
