@@ -30,5 +30,6 @@ public class Problem1 {
         }
     }
 
+    // This function converts a value in inches into its cm counterpart
     public static final double convertToCentimeters(double inches) { return (inches * 2.54); }
 }
