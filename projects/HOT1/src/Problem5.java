@@ -16,8 +16,11 @@ public class Problem5 {
 
         do {
             try {
-                purchasePrice = Double.parseDouble(scanner.nextLine());
+                // prompt the user for a number
+                String input = scanner.nextLine();
+                purchasePrice = Double.parseDouble(input);
 
+                //
                 if (purchasePrice < 0) {
                     break;
                 }

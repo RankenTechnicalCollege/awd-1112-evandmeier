@@ -18,9 +18,9 @@ public class Problem3 {
             }
         }
 
-        // check to see if the current index is a multiple of 3 or 5
         for (int i = 1; i <= input; ++i) {
-            if (isMultiple(i, 3) == true && isMultiple(i, 5) == true) {
+            // check to see if the current index is a multiple of 3 or 5
+            if (isMultiple(i, 3) && isMultiple(i, 5)) {
                 System.out.println("FizzBuzz");
             } else if (isMultiple(i, 3)) {
                 System.out.println("Fizz");
@@ -37,7 +37,6 @@ public class Problem3 {
         Otherwise the function returns false.
      */
     public static boolean isMultiple(int number, int multiple) {
-        if (number % multiple == 0) { return true; }
-        else { return false; }
+        return number % multiple == 0;
     }
 }

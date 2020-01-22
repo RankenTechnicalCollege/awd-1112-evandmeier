@@ -1,18 +1,18 @@
 public class Problem4 {
 
     public static void main(String[] args) {
-        System.out.println(fib(1));
-        System.out.println(fib(5));
-        System.out.println(fib(10));
-        System.out.println(fib(15));
+        System.out.println(getFib(1));
+        System.out.println(getFib(5));
+        System.out.println(getFib(10));
+        System.out.println(getFib(15));
     }
 
 
-    public static int fib(int n) {
+    public static int getFib(int n) {
         if (n == 0) { return 0; }
         else if (n == 1) { return 1; } // the fib number is 1
 
-        return fib(n - 1) + fib(n - 2);
+        return getFib(n - 1) + getFib(n - 2);
     }
 
     /*
