@@ -1,4 +1,4 @@
-package edu.ranken.emeier.hellotoast;
+package edu.ranken.emeier.hellotoastchallenge;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("edu.ranken.emeier.hellotoast", appContext.getPackageName());
+        assertEquals("edu.ranken.emeier.hellotoastchallenge", appContext.getPackageName());
     }
 }

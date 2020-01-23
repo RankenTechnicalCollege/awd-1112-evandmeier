@@ -1,4 +1,4 @@
-package edu.ranken.emeier.hellotoast;
+package edu.ranken.emeier.hellotoastchallenge;
 
 import org.junit.Test;
 
