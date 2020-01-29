@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">CodingChallenge21</string>
+    <string name="article_1_header">Article #1</string>
+    <string name="article_2_header">Article #2</string>
+    <string name="article_3_header">Article #3</string>
+    <string name="article_1_body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt laoreet quam,
+        ut rhoncus ex tincidunt ut. Sed tincidunt facilisis mi, id accumsan nunc facilisis quis.
+        Morbi condimentum venenatis risus, quis pellentesque nibh varius a. Sed dolor lectus,
+        pellentesque sit amet efficitur vulputate, congue nec magna. Aliquam finibus ante et mi
+        molestie interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Pellentesque enim metus, sagittis eget ligula quis, consequat
+        facilisis magna.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt laoreet quam,
+        ut rhoncus ex tincidunt ut. Sed tincidunt facilisis mi, id accumsan nunc facilisis quis.
+        Morbi condimentum venenatis risus, quis pellentesque nibh varius a. Sed dolor lectus,
+        pellentesque sit amet efficitur vulputate, congue nec magna. Aliquam finibus ante et mi
+        molestie interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Pellentesque enim metus, sagittis eget ligula quis, consequat
+        facilisis magna.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt laoreet quam,
+        ut rhoncus ex tincidunt ut. Sed tincidunt facilisis mi, id accumsan nunc facilisis quis.
+        Morbi condimentum venenatis risus, quis pellentesque nibh varius a. Sed dolor lectus,
+        pellentesque sit amet efficitur vulputate, congue nec magna. Aliquam finibus ante et mi
+        molestie interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada
+        fames ac turpis egestas. Pellentesque enim metus, sagittis eget ligula quis, consequat
+        facilisis magna.
+    </string>
+    <string name="article_2_body">
+        Donec vel pulvinar dolor. Etiam sit amet pretium massa. Proin turpis nibh, ultrices nec
+        nunc non, viverra convallis nunc. Vivamus tempus a nisl nec interdum. Nulla eu neque
+        ornare, auctor elit nec, dapibus turpis. Nullam ac quam vel mauris laoreet fermentum.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        Sed id tristique nunc. Ut massa sapien, ultrices ac interdum quis, maximus at felis. Morbi
+        euismod mi ut ligula elementum, eu tristique erat elementum. Maecenas euismod lorem ornare
+        lorem fringilla vehicula. Mauris eu mauris sem.
+        Donec vel pulvinar dolor. Etiam sit amet pretium massa. Proin turpis nibh, ultrices nec
+        nunc non, viverra convallis nunc. Vivamus tempus a nisl nec interdum. Nulla eu neque
+        ornare, auctor elit nec, dapibus turpis. Nullam ac quam vel mauris laoreet fermentum.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        Sed id tristique nunc. Ut massa sapien, ultrices ac interdum quis, maximus at felis. Morbi
+        euismod mi ut ligula elementum, eu tristique erat elementum. Maecenas euismod lorem ornare
+        lorem fringilla vehicula. Mauris eu mauris sem.
+        Donec vel pulvinar dolor. Etiam sit amet pretium massa. Proin turpis nibh, ultrices nec
+        nunc non, viverra convallis nunc. Vivamus tempus a nisl nec interdum. Nulla eu neque
+        ornare, auctor elit nec, dapibus turpis. Nullam ac quam vel mauris laoreet fermentum.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        Sed id tristique nunc. Ut massa sapien, ultrices ac interdum quis, maximus at felis. Morbi
+        euismod mi ut ligula elementum, eu tristique erat elementum. Maecenas euismod lorem ornare
+        lorem fringilla vehicula. Mauris eu mauris sem.
+    </string>
+    <string name="article_3_body">
+        Nunc vel laoreet sem. Sed eu ipsum sodales, sodales est non, feugiat ipsum. Nulla accumsan
+        sem id ante consectetur, et vehicula nunc finibus. Nunc dictum aliquam nunc, eu finibus sem
+        suscipit ut. Suspendisse efficitur vel massa malesuada viverra. Curabitur diam risus,
+        consectetur sed aliquet et, aliquam sit amet urna. Suspendisse hendrerit interdum ipsum in
+        tempor. Etiam at dictum libero. Nulla vulputate mi vel viverra bibendum. Vivamus rhoncus,
+        lectus a auctor facilisis, diam nibh congue est, id scelerisque eros nisi id eros. Ut
+        vestibulum, massa nec rutrum ultrices, nulla lorem tristique nulla, ac facilisis purus
+        lorem quis enim.
+        Nunc vel laoreet sem. Sed eu ipsum sodales, sodales est non, feugiat ipsum. Nulla accumsan
+        sem id ante consectetur, et vehicula nunc finibus. Nunc dictum aliquam nunc, eu finibus sem
+        suscipit ut. Suspendisse efficitur vel massa malesuada viverra. Curabitur diam risus,
+        consectetur sed aliquet et, aliquam sit amet urna. Suspendisse hendrerit interdum ipsum in
+        tempor. Etiam at dictum libero. Nulla vulputate mi vel viverra bibendum. Vivamus rhoncus,
+        lectus a auctor facilisis, diam nibh congue est, id scelerisque eros nisi id eros. Ut
+        vestibulum, massa nec rutrum ultrices, nulla lorem tristique nulla, ac facilisis purus
+        lorem quis enim.
+        Nunc vel laoreet sem. Sed eu ipsum sodales, sodales est non, feugiat ipsum. Nulla accumsan
+        sem id ante consectetur, et vehicula nunc finibus. Nunc dictum aliquam nunc, eu finibus sem
+        suscipit ut. Suspendisse efficitur vel massa malesuada viverra. Curabitur diam risus,
+        consectetur sed aliquet et, aliquam sit amet urna. Suspendisse hendrerit interdum ipsum in
+        tempor. Etiam at dictum libero. Nulla vulputate mi vel viverra bibendum. Vivamus rhoncus,
+        lectus a auctor facilisis, diam nibh congue est, id scelerisque eros nisi id eros. Ut
+        vestibulum, massa nec rutrum ultrices, nulla lorem tristique nulla, ac facilisis purus
+        lorem quis enim.
+    </string>
+</resources>
