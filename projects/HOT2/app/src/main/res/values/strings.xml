@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rectangle Calculator</string>
+    <string name="text_width">Width</string>
+    <string name="text_feet">ft</string>
+    <string name="text_height">Height</string>
+    <string name="text_calculate">Calculate</string>
+</resources>
