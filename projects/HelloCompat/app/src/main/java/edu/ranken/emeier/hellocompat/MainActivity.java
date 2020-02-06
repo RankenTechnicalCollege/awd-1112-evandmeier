@@ -46,10 +46,11 @@ public class MainActivity extends AppCompatActivity {
         int colorRes;
 
         // if the build version is greater or equal to Marshmallow (API 23)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            colorRes = getResources().getColor(colorResourceName, this.getTheme());
+        //ContextCompat.getColor(this, colorResourceName);
+        if (Build.VERSION.SDK_INT >= 23) {
+            colorRes = getColor(colorResourceName);
         } else {
-            colorRes = ContextCompat.getColor(this, colorResourceName);
+            colorRes = getResources().getColor(colorResourceName);
         }
 
         mHelloTextView.setTextColor(colorRes);
