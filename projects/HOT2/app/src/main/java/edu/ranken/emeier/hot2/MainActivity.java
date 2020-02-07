@@ -60,10 +60,10 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             // if there is an empty entry
-            if (widthEntry.isEmpty()
+            /*if (widthEntry.isEmpty()
                     || heightEntry.isEmpty()) {
                 throw new IllegalArgumentException("Make sure you enter two valid numbers!");
-            }
+            }*/
 
             // get width and height entries
             width = Double.parseDouble(widthEntry);
@@ -80,15 +80,15 @@ public class MainActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(getApplicationContext(), "Successfully made calculations!", Toast.LENGTH_LONG);
             toast.show();
 
-        } catch(IllegalArgumentException e) {
-            Log.e("MainActivity", "[Error] 1 or 2 empty entries!");
+        } catch(NumberFormatException ex) {
+            Log.e("MainActivity", "[Error] 1 or 2 empty entries!", ex);
 
             // clear current area and perimeter values
             mAreaOutput.setText("");
             mPerimeterOutput.setText("");
 
             // display error message to users
-            mErrorOutput.setText(e.getMessage());
+            mErrorOutput.setText("Make sure you enter two valid numbers!");
         }
     }
 

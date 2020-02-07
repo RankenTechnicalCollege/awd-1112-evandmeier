@@ -17,7 +17,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private String mOrderMessage;
-    public static final String EXTRA_MESSAGE = "edu.ranken.emeier.droidcafe.extra.MESSAGE";
+    public static final String EXTRA_MESSAGE = "edu.ranken.emeier.droidcafeinput.extra.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
