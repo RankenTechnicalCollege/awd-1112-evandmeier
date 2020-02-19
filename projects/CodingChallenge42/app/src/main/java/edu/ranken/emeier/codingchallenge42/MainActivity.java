@@ -28,13 +28,11 @@ public class MainActivity extends AppCompatActivity {
                 // If view is found, set the listener for editText.
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    boolean handled = false;
                     if (actionId == EditorInfo.IME_ACTION_SEND) {
                         dialNumber();
-                        handled = true;
+                        return true;
                     }
-
-                    return handled;
+                    return false;
                 }
             });
         }
@@ -43,11 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private void dialNumber() {
         // find the editText_main view
         EditText editText = findViewById(R.id.editText_main);
-        String phoneNum = null;
-
-        // if the edittext field is not null,
-        // concatenate "tel: " with the phone number string.
-        if (editText != null) { phoneNum = "tel:" + editText.getText().toString(); }
+        String phoneNum = "tel:" + editText.getText().toString();
 
         // log the phone number
         Log.d(TAG, "dialNumber: " + phoneNum);

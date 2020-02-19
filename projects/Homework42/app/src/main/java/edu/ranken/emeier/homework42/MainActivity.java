@@ -27,10 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void showToast(View view) {
         // checks whether any toppings were selected
-        boolean toppingsSelected = false;
+        //boolean toppingsSelected = false;
 
         // holds the output of the toast
         StringBuilder output = new StringBuilder("Toppings: ");
+        int initialLength = output.length();
 
         // iterate through the checkbox array
         for(CheckBox checkBox : checkBoxes) {
@@ -38,11 +39,12 @@ public class MainActivity extends AppCompatActivity {
             // if so, append the output string
             if (checkBox.isChecked()) {
                 output.append(checkBox.getText().toString()).append(" + ");
-                toppingsSelected = true;
+                //toppingsSelected = true;
             }
         }
 
-        if (toppingsSelected) {
+        if (output.length() > initialLength) {
+            output.setLength(output.length() - 3);
             Toast.makeText(getApplicationContext(), output.toString(), Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(getApplicationContext(), "No Toppings Selected!", Toast.LENGTH_SHORT).show();

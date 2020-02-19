@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Homework45</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </string>
+
+    <!--Recipe #1-->
+    <string name="recipe_1_name">Chocolate Chip, PB and Banana Sandwich</string>
+    <string name="recipe_1_description">
+        I love finding new ways to combine peanut butter, chocolate and bananas. I was shocked
+        when my nephews (who are very picky eaters) loved these sammies. —Charlotte Gehle,
+        Brownstown, Michigan
+    </string>
+    <string name="recipe_1_ingredients">
+        Ingredients\n
+        1/4 cup creamy peanut butter\n
+        2 tablespoons honey\n
+        1/4 teaspoon ground cinnamon\n
+        2 tablespoons miniature semisweet chocolate chips\n
+        4 slices whole wheat bread\n
+        1 medium banana, thinly sliced\n
+    </string>
+    <string name="recipe_1_steps">
+        Procedure\n
+        1: Mix peanut butter, honey and cinnamon\n
+        2: Stir in chocolate chips\n
+        3: Spread over bread\n
+        4: Layer two bread slices with banana slices\n
+        5: Top with remaining bread\n
+        6: If desired, cut into shapes using cookie cutters
+    </string>
+
+    <!--Recipe #2-->
+    <string name="recipe_2_name">Crunchy Granola Pretzel Sticks</string>
+    <string name="recipe_2_description">
+        I love this healthier, portable snack that is sweet, crunchy and fun to make.
+        If you do not have granola, use other cereals or nuts. You can even do
+        bacon bits.—Kelly Silvers, Edmond, Oklahoma
+    </string>
+    <string name="recipe_2_ingredients">
+        Ingredients\n
+        1 package (12 ounces) dark chocolate chips\n
+        24 pretzel rods\n
+        1 cup granola without raisins
+    </string>
+    <string name="recipe_2_steps">
+        Procedure\n
+        1: In a microwave, melt chocolate chips in a 2-cup glass measuring cup\n
+        2: Stir until smooth. Pour into one side of a large shallow dish\n
+        3: Roll each pretzel halfway into chocolate\n
+        4: Allow excess coating to drip off, then sprinkle pretzels with granola\n
+        5: Place on waxed paper until set. Store in an airtight container.
+    </string>
+
+    <!--Recipe #3-->
+    <string name="recipe_3_name">Fruity Peanut Butter Pitas</string>
+    <string name="recipe_3_description">
+        My kids ask for these all the time. The sandwiches not only taste good,
+        they’re healthy, too!—Kim Holmes, Emerald Park, Saskatchewan
+    </string>
+    <string name="recipe_3_ingredients">
+        Ingredients\n
+        1/4 cup peanut butter\n
+        1/8 teaspoon each ground allspice, cinnamon and nutmeg\n
+        2 whole wheat pita pocket halves\n
+        1/2 medium apple, thinly sliced\n
+        1/2 medium firm banana, sliced\n
+    </string>
+    <string name="recipe_3_steps">
+        Procedure\n
+        1: In a small bowl, blend the peanut butter, allspice, cinnamon and nutmeg\n
+        2: Spread inside pita bread halves\n
+        3: Fill with apple and banana slices
+    </string>
+
+    <!--Recipe #4-->
+    <string name="recipe_4_name">Chicken and Bacon Roll-Ups</string>
+    <string name="recipe_4_description">
+        My children like these so much that they ask for them every day for
+        lunch during the summer. Whenever I have leftover chicken or turkey breast,
+        this is a delicious way to use it up. —Patricia Nieh, Portola Valley, California
+    </string>
+    <string name="recipe_4_ingredients">
+        Ingredients\n
+        1 can (9-3/4 ounces) chunk white chicken, drained\n
+        1 carton (8 ounces) spreadable garden vegetable cream cheese\n
+        1 cup salsa, divided\n
+        4 pieces ready-to-serve fully cooked bacon, crumbled\n
+        6 flour tortillas (8 inches), room temperature\n
+    </string>
+    <string name="recipe_4_steps">
+        Procedure\n
+        1: Mix chicken, cream cheese, 1/2 cup salsa and bacon\n
+        2: Spread over tortillas. Roll up tightly and wrap in plastic\n
+        3: Refrigerate at least 1 hour\n
+        4: Just before serving, unwrap and cut tortillas into 1-in. slices\n
+        5: Serve with remaining salsa
+    </string>
+
+    <!--Recipe #5-->
+    <string name="recipe_5_name">Frozen Banana Cereal Pops</string>
+    <string name="recipe_5_description">
+        When we want a healthy snack, we dip bananas in yogurt, roll them in cereal,
+        then freeze. Ta-da! —Scarlett Elrod, Newnan, Georgia
+    </string>
+    <string name="recipe_5_ingredients">
+        Ingredients\n
+        3/4 cup strawberry yogurt\n
+        2 cups Fruity Pebbles cereal\n
+        4 medium bananas, peeled and cut crosswise in half\n
+        8 wooden pop sticks
+    </string>
+    <string name="recipe_5_steps">
+        Procedure\n
+        1: Place yogurt and cereal in separate shallow bowls\n
+        2: Insert pop sticks through cut side of bananas\n
+        3: Dip bananas in yogurt, then roll in cereal to coat\n
+        4: Transfer to waxed paper-lined baking sheets\n
+        5: Freeze until firm, about 1 hour\n
+        6: Transfer to airtight freezer containers\n
+        7: Seal containers and return pops to freezer
+    </string>
+</resources>

@@ -1,6 +1,7 @@
 package edu.ranken.emeier.droidcafe;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,20 +29,18 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
         Spinner spinner = findViewById(R.id.label_spinner);
         if (spinner != null) {
             spinner.setOnItemSelectedListener(this);
-        }
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                                                                                        R.array.labels_array,
-                                                                                        android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                    R.array.labels_array,
+                    android.R.layout.simple_spinner_item);
 
-        if (spinner != null) {
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
             spinner.setAdapter(adapter);
         }
     }
 
-    public void onItemSelected(AdapterView<?> adapterView, View view, int
-            i, long l) {
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         String spinnerLabel = adapterView.getItemAtPosition(i).toString();
         displayToast(spinnerLabel);
     }
@@ -79,5 +78,19 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
 
     public void displayToast(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
+
+    public void showDatePicker(View view) {
+        DialogFragment newFragment = new DatePickerFragment();
+        newFragment.show(getSupportFragmentManager(), getString(R.string.datepicker));
+    }
+
+    public void processDatePickerResult(int year, int month, int day) {
+        String month_string = Integer.toString(month + 1);
+        String day_string = Integer.toString(day);
+        String year_string = Integer.toString(year);
+        String dateMessage = (month_string + "/" + day_string + "/" + year_string);
+
+        Toast.makeText(this, "Date: " + dateMessage, Toast.LENGTH_SHORT).show();
     }
 }
