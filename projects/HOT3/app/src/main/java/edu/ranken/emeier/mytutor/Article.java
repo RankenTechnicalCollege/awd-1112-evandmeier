@@ -1,20 +1,14 @@
 package edu.ranken.emeier.mytutor;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.Calendar;
 
-public class Article {
+public class Article implements Parcelable {
 
     private final String title, author, topic, link;
     private final Calendar publishedDate;
-
-    // THIS IS JUST FOR TEST DATA
-    public Article() {
-        this.title = "This is a test title!!!";
-        this.author = "Random Fella";
-        this.topic = "Java";
-        this.link = "http://espn.com";
-        this.publishedDate = Calendar.getInstance();
-    }
 
     // TEST DATA
     public Article(String author, String topic) {
@@ -38,23 +32,39 @@ public class Article {
         this.publishedDate = publishedDate;
     }
 
-    public Article(
-            String title,
-            String author,
-            String topic,
-            String link,
-            int year,
-            int month,
-            int day) {
-        this.title = title;
-        this.author = author;
-        this.topic = topic;
-        this.link = link;
-
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(year, month, day);
-        this.publishedDate = calendar;
+    protected Article(Parcel in) {
+        title = in.readString();
+        author = in.readString();
+        topic = in.readString();
+        link = in.readString();
+        publishedDate = (java.util.Calendar) in.readSerializable();
     }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(title);
+        dest.writeString(author);
+        dest.writeString(topic);
+        dest.writeString(link);
+        dest.writeSerializable(publishedDate);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<Article> CREATOR = new Creator<Article>() {
+        @Override
+        public Article createFromParcel(Parcel in) {
+            return new Article(in);
+        }
+
+        @Override
+        public Article[] newArray(int size) {
+            return new Article[size];
+        }
+    };
 
     public String getTitle() {
         return title;

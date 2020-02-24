@@ -1,6 +1,9 @@
 package edu.ranken.emeier.mytutor;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,7 +75,17 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
 
         @Override
         public void onClick(View v) {
-            // implicit intent to open browser
+            int index = getLayoutPosition();
+
+            String url = mArticleList.get(index).getLink();
+            Uri webpage = Uri.parse(url);
+
+            Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+            if (intent.resolveActivity(mContext.getPackageManager()) != null) {
+                mContext.startActivity(intent);
+            } else {
+                Log.d("ImplicitIntents", "Can't handle this intent!");
+            }
         }
     }
 }

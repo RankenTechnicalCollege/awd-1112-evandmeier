@@ -6,7 +6,14 @@
     <string name="hint_email_address">example@ranken.edu</string>
     <string name="hint_password">P@ssw0rd</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="datepicker">datePicker</string>
+
+    <string-array name="spinner_values">
+        <item>Java</item>
+        <item>Android</item>
+        <item>Web Dev</item>
+    </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_article">Add Article</string>
 </resources>

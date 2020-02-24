@@ -1,16 +1,13 @@
 package edu.ranken.emeier.mytutor;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.util.Log;
@@ -28,6 +25,7 @@ public class HomeActivity extends AppCompatActivity {
     private TabLayout mTabLayout;
     private ViewPager mViewPager;
     private FloatingActionButton mFab;
+    private ArrayList<Article> mArticleList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +43,7 @@ public class HomeActivity extends AppCompatActivity {
 
         //configure toolbar
         setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // configure TabLayout
         mTabLayout.addTab(mTabLayout.newTab().setText("Java"));
@@ -54,7 +53,13 @@ public class HomeActivity extends AppCompatActivity {
 
         // use PagerAdapter to manage page views in fragments
         // each page is represented by its own fragment
-        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager());
+        mArticleList = initializeArticleList();
+        Intent intent = getIntent();
+        if (intent.getParcelableExtra("new_article") != null)  {
+            mArticleList.add(intent.getParcelableExtra("new_article"));
+        }
+
+        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), mArticleList);
         mViewPager.setAdapter(pagerAdapter);
 
         mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -74,8 +79,22 @@ public class HomeActivity extends AppCompatActivity {
 
         // configure fab
         mFab.setOnClickListener((View view) -> {
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show();
+            startActivity(new Intent(this, AddArticleActivity.class));
         });
+    }
+
+    private ArrayList<Article> initializeArticleList() {
+        ArrayList<Article> list = new ArrayList<>();
+        list.add(new Article("Java Fella 1", "Java"));
+        list.add(new Article("Java Fella 2", "Java"));
+        list.add(new Article("Java Fella 3", "Java"));
+        list.add(new Article("Android Fella 1", "Android"));
+        list.add(new Article("Android Fella 2", "Android"));
+        list.add(new Article("Android Fella 3", "Android"));
+        list.add(new Article("Web Dev Fella 1", "Web Dev"));
+        list.add(new Article("Web Dev Fella 2", "Web Dev"));
+        list.add(new Article("Web Dev Fella 3", "Web Dev"));
+
+        return list;
     }
 }
