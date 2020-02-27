@@ -29,6 +29,7 @@ public class HomeActivity extends AppCompatActivity {
     public static String JAVA_ARTICLES_EXTRA = "edu.ranken.emeier.mytutor.JavaArticlesExtra";
     public static String ANDROID_ARTICLES_EXTRA = "edu.ranken.emeier.mytutor.AndroidArticlesExtra";
     public static String WEB_ARTICLES_EXTRA = "edu.ranken.emeier.mytutor.WebArticlesExtra";
+    public static String CURRENT_TAB_EXTRA = "edu.ranken.emeier.mytutor.CurrentTabExtra";
 
     // list of articles
     private Toolbar mToolbar;
@@ -123,6 +124,7 @@ public class HomeActivity extends AppCompatActivity {
         outState.putParcelableArrayList(JAVA_ARTICLES_EXTRA, javaList);
         outState.putParcelableArrayList(ANDROID_ARTICLES_EXTRA, androidList);
         outState.putParcelableArrayList(WEB_ARTICLES_EXTRA, webList);
+        outState.putInt(CURRENT_TAB_EXTRA, mViewPager.getCurrentItem());
 
         Log.d(TAG, "HomeActivity instance saved.");
     }
@@ -140,6 +142,8 @@ public class HomeActivity extends AppCompatActivity {
         ArrayList<Article> webList = savedInstanceState.getParcelableArrayList(WEB_ARTICLES_EXTRA);
         TabFragment webFragment = Utilities.createTabFragment(webList);
 
+        int currentTab = savedInstanceState.getInt(CURRENT_TAB_EXTRA);
+
         mFragments = new TabFragment[3];
         mFragments[0] = javaFragment;
         mFragments[1] = androidFragment;
@@ -147,6 +151,7 @@ public class HomeActivity extends AppCompatActivity {
 
         PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), mFragments);
         mViewPager.setAdapter(pagerAdapter);
+        mViewPager.setCurrentItem(currentTab);
 
         mTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
