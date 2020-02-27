@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -26,10 +25,14 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
+import edu.ranken.emeier.mytutor.utils.Article;
+import edu.ranken.emeier.mytutor.utils.Utilities;
+
 public class AddArticleActivity extends AppCompatActivity {
 
     // constants
     private final String TAG = "AddArticleActivity";
+    public static String NEW_ARTICLE_EXTRA = "edu.ranken.emeier.mytutor.NewArticleExtra";
 
     // widgets
     private EditText mInputTitle, mInputAuthor, mInputDate, mInputLink;
@@ -44,6 +47,8 @@ public class AddArticleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_article);
+
+        Log.d(TAG, "Entered AddArticleActivity");
 
         // get widgets
         mInputTitle = findViewById(R.id.input_article_title);
@@ -87,39 +92,39 @@ public class AddArticleActivity extends AppCompatActivity {
                     mInputLink.getText().toString().isEmpty() ||
                     mInputDate.getText().toString().isEmpty()) {
 
+                Log.d(TAG, "Empty fields present. Showing alert.");
+
                 // create alert dialog
-                showAlert("Invalid Data!", "Please complete all fields.");
+                Utilities.showAlert(this, getString(R.string.alert_title), getString(R.string.alert_invalid_data));
             } else {
                 // get the values of the fields
                 String title = mInputTitle.getText().toString();
                 String author = mInputAuthor.getText().toString();
-
+                String date = mInputDate.getText().toString();
                 String link = mInputLink.getText().toString();
+
+                // check to make sure the link is a valid URL
                 if (!URLUtil.isValidUrl(link)) {
-                    showAlert("Invalid URL!", "Make sure you enter a valid URL.");
+                    Log.d(TAG, "Invalid URL entered. Showing alert.");
+
+                    Utilities.showAlert(this, getString(R.string.alert_title), getString(R.string.alert_invalid_url));
                     return;
                 }
 
-                String date = mInputDate.getText().toString();
+                // convert date string to calendar object
+                Calendar calendar = Utilities.parseDateString(date);
 
-                // convert date string to calendar
-                Calendar calendar = Calendar.getInstance();
-                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy", Locale.ENGLISH);
-                Date dateObject;
-
-                try {
-                    dateObject = simpleDateFormat.parse(date);
-                } catch (ParseException e) {
-                    dateObject = new Date();
-                }
-                calendar.setTime(dateObject);
-
+                // convert data into new Article object
                 Article article = new Article(title, author, mTopic, link, calendar);
-                Intent intent = new Intent(this, HomeActivity.class);
-                intent.putExtra("new_article", article);
-                startActivity(intent);
+                Intent newIntent = new Intent();
+                newIntent.putExtra(NEW_ARTICLE_EXTRA, article);
+
+                setResult(RESULT_OK, newIntent);
+                finish();
             }
         });
+
+        Log.d(TAG, "AddArticleActivity successfully created.");
     }
 
     public void showDatePicker(View view) {
@@ -134,19 +139,5 @@ public class AddArticleActivity extends AppCompatActivity {
         String dateMessage = (month_string + "/" + day_string + "/" + year_string);
 
         mInputDate.setText(dateMessage);
-    }
-
-    public void showAlert(String title, String message) {
-        // create alert dialog
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-        alertDialog.setTitle(title);
-        alertDialog.setMessage(message);
-
-        // set OnClickListener
-        alertDialog.setPositiveButton("Ok", (DialogInterface dialog, int which) -> {
-            dialog.dismiss();
-        });
-
-        alertDialog.show();
     }
 }

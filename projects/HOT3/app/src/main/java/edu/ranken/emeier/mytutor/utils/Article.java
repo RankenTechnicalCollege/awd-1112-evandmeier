@@ -1,4 +1,4 @@
-package edu.ranken.emeier.mytutor;
+package edu.ranken.emeier.mytutor.utils;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -9,15 +9,6 @@ public class Article implements Parcelable {
 
     private final String title, author, topic, link;
     private final Calendar publishedDate;
-
-    // TEST DATA
-    public Article(String author, String topic) {
-        this.title = "This is a test title!!!";
-        this.author = author;
-        this.topic = topic;
-        this.link = "http://espn.com";
-        this.publishedDate = Calendar.getInstance();
-    }
 
     public Article(
             String title,

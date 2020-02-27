@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "app_name"> Material Me! </string>
+    <string name = "title_placeholder"> Título </string>
+    <string name = "news_placeholder"> Noticias </string>
+    <string name = "sports_info_placeholder"> Aquí hay algunas noticias </string>
+
+    <string-array name = "sports_titles">
+        <item> Béisbol </item>
+        <item> Bádminton </item>
+        <item> Baloncesto </item>
+        <item> Bowling </item>
+        <item> Ciclismo </item>
+        <item> Golf </item>
+        <item> Ejecutando </item>
+        <item> Fútbol </item>
+        <item> Natación </item>
+        <item> Tenis de mesa </item>
+        <item> Tenis </item>
+    </string-array>
+
+    <string-array name = "sports_info">
+        <item> ¡Aquí hay algunas noticias de Béisbol! </item>
+        <item> ¡Aquí hay algunas noticias de Badminton! </item>
+        <item> ¡Aquí hay noticias de baloncesto! </item>
+        <item> ¡Aquí hay algunas noticias de Bowling! </item>
+        <item> ¡Aquí hay algunas noticias de ciclismo! </item>
+        <item> ¡Aquí hay noticias de golf! </item>
+        <item> ¡Aquí hay algunas noticias de Running! </item>
+        <item> ¡Aquí hay noticias de fútbol! </item>
+        <item> ¡Aquí hay noticias de natación! </item>
+        <item> ¡Aquí hay algunas noticias de tenis de mesa! </item>
+        <item> ¡Aquí hay noticias de tenis! </item>
+    </string-array>
+
+    <string name="league">Liga Mayor SportName</string>
+    <string name="baseball_teams">
+        <b>Equipos</b>\n
+        Dodgers\n
+        Padres\n
+        Giants\n
+        D-backs\n
+        Rockies\n
+        Cardinals\n
+        Cubs\n
+        Brewers\n
+        Reds\n
+        Pirates\n
+    </string>
+
+    <string name="badminton_teams">
+        <b>Equipos</b>\n
+        Bádminton Player #1\n
+        Bádminton Player #2\n
+        Bádminton Player #3\n
+        Bádminton Player #4\n
+        Bádminton Player #5\n
+        Bádminton Player #6\n
+        Bádminton Player #7\n
+        Bádminton Player #8\n
+        Bádminton Player #9\n
+        Bádminton Player #10\n
+    </string>
+
+    <string name="basketball_teams">
+        <b>Equipos</b>\n
+        Lakers\n
+        Clippers\n
+        Warriors\n
+        Suns\n
+        Knicks\n
+        Bulls\n
+        Bucks\n
+        Pelicans\n
+        Celtics\n
+        Raptors\n
+    </string>
+
+    <string name="soccer_teams">
+        <b>Equipos</b>\n
+        Galaxy\n
+        LA FC\n
+        Sounders\n
+        United FC\n
+        Red Bulls\n
+        D.C. United\n
+        Timbers\n
+        Fire FC\n
+        Impact\n
+        Revolution\n
+    </string>
+
+    <string name="tennis_players">
+        <b>Jugadores</b>\n
+        Roger Federer\n
+        Rafael Nadal\n
+        Novak Djokovic\n
+        Serena Williams\n
+        Venus Williams\n
+        Andy Murray\n
+        John McEnroe\n
+        Stan Wawrinka\n
+        Dominic Thiem\n
+        Pete Sampras\n
+    </string>
+
+    <string name="golf_players">
+        <b>Jugadores</b>\n
+        Tiger Woods\n
+        Rory McIlroy\n
+        Jack Nicklaus\n
+        Phil Mickelson\n
+        Jordan Spieth\n
+        Dustin Johnson\n
+        Ernie Els\n
+        Adam Scott\n
+        Rickie Fowler\n
+        Jason Dady\n
+    </string>
+</resources>

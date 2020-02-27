@@ -1,0 +1,163 @@
+<!--
+  Copyright 2018 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+    <string name="app_name">Material Me!</string>
+    <string name="title_placeholder">Title</string>
+    <string name="news_placeholder">News</string>
+    <string name="sports_info_placeholder">Here is some news</string>
+
+    <string-array name="sports_titles">
+        <item>Baseball</item>
+        <item>Badminton</item>
+        <item>Basketball</item>
+        <item>Bowling</item>
+        <item>Cycling</item>
+        <item>Golf</item>
+        <item>Running</item>
+        <item>Soccer</item>
+        <item>Swimming</item>
+        <item>Table Tennis</item>
+        <item>Tennis</item>
+    </string-array>
+
+    <string-array name="sports_info">
+        <item>Here is some Baseball news!</item>
+        <item>Here is some Badminton news!</item>
+        <item>Here is some Basketball news!</item>
+        <item>Here is some Bowling news!</item>
+        <item>Here is some Cycling news!</item>
+        <item>Here is some Golf news!</item>
+        <item>Here is some Running news!</item>
+        <item>Here is some Soccer news!</item>
+        <item>Here is some Swimming news!</item>
+        <item>Here is some Table Tennis news!</item>
+        <item>Here is some Tennis news!</item>
+    </string-array>
+
+    <array name="sports_images">
+        <item>@drawable/img_baseball</item>
+        <item>@drawable/img_badminton</item>
+        <item>@drawable/img_basketball</item>
+        <item>@drawable/img_bowling</item>
+        <item>@drawable/img_cycling</item>
+        <item>@drawable/img_golf</item>
+        <item>@drawable/img_running</item>
+        <item>@drawable/img_soccer</item>
+        <item>@drawable/img_swimming</item>
+        <item>@drawable/img_tabletennis</item>
+        <item>@drawable/img_tennis</item>
+    </array>
+
+    <array name="sports_teams">
+        <item>@string/baseball_teams</item>
+        <item>@string/badminton_teams</item>
+        <item>@string/basketball_teams</item>
+        <item>@string/soccer_teams</item>
+        <item>@string/tennis_players</item>
+        <item>@string/golf_players</item>
+        <item>@string/baseball_teams</item>
+        <item>@string/badminton_teams</item>
+        <item>@string/basketball_teams</item>
+        <item>@string/soccer_teams</item>
+        <item>@string/tennis_players</item>
+    </array>
+
+    <string name="league">Major League SportName</string>
+    <string name="baseball_teams">
+        <b>Teams</b>\n
+        Dodgers\n
+        Padres\n
+        Giants\n
+        D-backs\n
+        Rockies\n
+        Cardinals\n
+        Cubs\n
+        Brewers\n
+        Reds\n
+        Pirates\n
+    </string>
+
+    <string name="badminton_teams">
+        <b>Teams</b>\n
+        Badminton Player #1\n
+        Badminton Player #2\n
+        Badminton Player #3\n
+        Badminton Player #4\n
+        Badminton Player #5\n
+        Badminton Player #6\n
+        Badminton Player #7\n
+        Badminton Player #8\n
+        Badminton Player #9\n
+        Badminton Player #10\n
+    </string>
+
+    <string name="basketball_teams">
+        <b>Teams</b>\n
+        Lakers\n
+        Clippers\n
+        Warriors\n
+        Suns\n
+        Knicks\n
+        Bulls\n
+        Bucks\n
+        Pelicans\n
+        Celtics\n
+        Raptors\n
+    </string>
+
+    <string name="soccer_teams">
+        <b>Teams</b>\n
+        Galaxy\n
+        LA FC\n
+        Sounders\n
+        United FC\n
+        Red Bulls\n
+        D.C. United\n
+        Timbers\n
+        Fire FC\n
+        Impact\n
+        Revolution\n
+    </string>
+
+    <string name="tennis_players">
+        <b>Players</b>\n
+        Roger Federer\n
+        Rafael Nadal\n
+        Novak Djokovic\n
+        Serena Williams\n
+        Venus Williams\n
+        Andy Murray\n
+        John McEnroe\n
+        Stan Wawrinka\n
+        Dominic Thiem\n
+        Pete Sampras\n
+    </string>
+
+    <string name="golf_players">
+        <b>Players</b>\n
+        Tiger Woods\n
+        Rory McIlroy\n
+        Jack Nicklaus\n
+        Phil Mickelson\n
+        Jordan Spieth\n
+        Dustin Johnson\n
+        Ernie Els\n
+        Adam Scott\n
+        Rickie Fowler\n
+        Jason Dady\n
+    </string>
+
+</resources>

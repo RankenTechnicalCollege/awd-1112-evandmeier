@@ -14,6 +14,88 @@
         <item>Web Dev</item>
     </string-array>
 
+    <string-array name="article_titles">
+        <item>10 Things Java Programmers Should Learn in 2020</item>
+        <item>OpenJDK: Hidden Classes Could be Coming to Java</item>
+        <item>10 Deadly Mistakes to Avoid When Learning Java</item>
+        <item>A Study List for Java Developers</item>
+        <item>How (and why) to Cook equals() and hashCode() in Java</item>
+        <item>5 Android App Development Fundamentals for Beginners</item>
+        <item>Top 10 Most Common Mistakes That Android Developers Make: A Programming Tutorial</item>
+        <item>The Past, Present and Future of Android Development</item>
+        <item>TDD Changed My Life</item>
+        <item>Improving Third-Party Web Performance at The Telegraph</item>
+        <item>HTML + JavaScript + CSS = Employment</item>
+    </string-array>
+
+    <string-array name="article_authors">
+        <item>Javin Paul</item>
+        <item>Paul Krill</item>
+        <item>John Selawsky</item>
+        <item>Jim</item>
+        <item>Mykola Shumyn</item>
+        <item>Eshna Verma</item>
+        <item>Ivan Dimoski</item>
+        <item>Željko Plesac</item>
+        <item>Eric Elliot</item>
+        <item>Gareth Clubb</item>
+        <item>Sangeeta Nair</item>
+    </string-array>
+
+    <string-array name="article_links">
+        <item>https://hackernoon.com/10-things-java-developer-should-learn-in-2020-px9j309i</item>
+        <item>https://www.javaworld.com/article/3526475/hidden-classes-could-be-coming-to-java.html</item>
+        <item>https://medium.com/javarevisited/10-deadly-mistakes-to-avoid-when-learning-java-aead894e64f4</item>
+        <item>https://medium.com/@jianbao.tao/a-study-list-for-java-developers-56a3f35527a5</item>
+        <item>https://itnext.io/how-and-why-to-cook-equals-and-hashcode-in-java-c108fd5b17dd</item>
+        <item>https://www.simplilearn.com/android-app-development-fundamentals-article</item>
+        <item>https://www.toptal.com/android/top-10-most-common-android-development-mistakes</item>
+        <item>https://infinum.com/the-capsized-eight/the-past-present-and-future-of-android-development</item>
+        <item>https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80</item>
+        <item>https://medium.com/the-telegraph-engineering/improving-third-party-web-performance-at-the-telegraph-a0a1000be5</item>
+        <item>https://blog.edx.org/html-javascript-css-employment/</item>
+    </string-array>
+
+    <string-array name="article_dates">
+        <item>8/17/2019</item>
+        <item>2/6/2020</item>
+        <item>4/17/2019</item>
+        <item>4/1/2019</item>
+        <item>4/16/2019</item>
+        <item>4/25/2019</item>
+        <item>9/22/2019</item>
+        <item>3/4/2015</item>
+        <item>4/18/2019</item>
+        <item>4/30/2019</item>
+        <item>4/11/2017</item>
+    </string-array>
+
+    <string-array name="article_topics">
+        <item>Java</item>
+        <item>Java</item>
+        <item>Java</item>
+        <item>Java</item>
+        <item>Java</item>
+        <item>Android</item>
+        <item>Android</item>
+        <item>Android</item>
+        <item>Web Dev</item>
+        <item>Web Dev</item>
+        <item>Web Dev</item>
+    </string-array>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="title_activity_add_article">Add Article</string>
+    <string name="topic_java">Java</string>
+    <string name="topic_android">Android</string>
+    <string name="topic_webdev">Web Dev</string>
+    <string name="alert_title">Invalid Data!</string>
+    <string name="alert_invalid_data">Please complete all fields.</string>
+    <string name="alert_invalid_url">Make sure you enter a valid URL.</string>
+    <string name="text_article_author">Article Author</string>
+    <string name="text_published_date">Published Date</string>
+    <string name="text_topic">Topic</string>
+    <string name="text_link">Link</string>
+    <string name="login_error">Incorrect Email and/or Password</string>
 </resources>

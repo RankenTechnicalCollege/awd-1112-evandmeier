@@ -12,14 +12,14 @@ import android.widget.EditText;
 
 import com.google.android.material.snackbar.Snackbar;
 
+import edu.ranken.emeier.mytutor.utils.Utilities;
+
 public class LoginActivity extends AppCompatActivity {
 
     // constants
     private final String TAG = "MainActivity";
-    //private final String correctEmail = "admin@ranken.edu";
-    private final String correctEmail = "";
-    //private final String correctPassword = "P@ssw0rd";
-    private final String correctPassword = "";
+    private final String correctEmail = "admin@ranken.edu";
+    private final String correctPassword = "P@ssw0rd";
 
     // widgets
     private EditText mEmailInput, mPasswordInput;
@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Log.d(TAG, "Created MainActivity");
+        Log.d(TAG, "Entered LoginActivity");
 
         // get widgets
         mEmailInput = findViewById(R.id.input_email_address);
@@ -46,6 +46,8 @@ public class LoginActivity extends AppCompatActivity {
 
             return false;
         });
+
+        Log.d(TAG, "LoginActivity successfully created.");
     }
 
     public void login(View view) {
@@ -59,18 +61,12 @@ public class LoginActivity extends AppCompatActivity {
             Log.d(TAG, "User failed login.");
 
             // display snackbar
-            displaySnackbar(view, "Incorrect Email and/or Password");
+            Utilities.displaySnackbar(view, getString(R.string.login_error));
         } else {
             Log.d(TAG, "User logged in.");
 
             // move to home activity
             startActivity(new Intent(this, HomeActivity.class));
         }
-    }
-
-    public static void displaySnackbar(View view, String message) {
-        Snackbar snackbar = Snackbar
-                .make(view, message, Snackbar.LENGTH_LONG);
-        snackbar.show();
     }
 }

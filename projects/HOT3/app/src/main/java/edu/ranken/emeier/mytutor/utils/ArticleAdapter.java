@@ -1,4 +1,4 @@
-package edu.ranken.emeier.mytutor;
+package edu.ranken.emeier.mytutor.utils;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,8 +17,14 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
+import edu.ranken.emeier.mytutor.R;
+
 public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder> {
 
+    // constants
+    private final String TAG = "ArticleAdapter";
+
+    // widgets
     private final Context mContext;
     private final List<Article> mArticleList;
     private final LayoutInflater mInflater;
@@ -75,6 +81,8 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
 
         @Override
         public void onClick(View v) {
+            Log.d(TAG, String.format("Clicked on '%s' article.", mArticleTitle.getText().toString()));
+
             int index = getLayoutPosition();
 
             String url = mArticleList.get(index).getLink();
@@ -84,7 +92,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
             if (intent.resolveActivity(mContext.getPackageManager()) != null) {
                 mContext.startActivity(intent);
             } else {
-                Log.d("ImplicitIntents", "Can't handle this intent!");
+                Log.d(TAG, "Failed to open specified web page.");
             }
         }
     }

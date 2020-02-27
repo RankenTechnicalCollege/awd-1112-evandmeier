@@ -7,16 +7,22 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import edu.ranken.emeier.mytutor.utils.Article;
+import edu.ranken.emeier.mytutor.utils.ArticleAdapter;
+import edu.ranken.emeier.mytutor.utils.Utilities;
+
 public class TabFragment extends Fragment {
+
+    private static final String TAG = "TabFragment";
 
     private ArrayList<Article> mArticleList;
     private RecyclerView mRecyclerView;
@@ -26,16 +32,17 @@ public class TabFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ArrayList<Article> articles = getArguments().getParcelableArrayList("articles");
-        String topic = getArguments().getString("topic");
+        Log.d(TAG, "Successfully created TabFragment");
 
-        mArticleList = returnListByTopic(articles, topic);
+        mArticleList = getArguments().getParcelableArrayList(Utilities.ARTICLE_LIST_EXTRA);
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_tab, container, false);
+
+        Log.d(TAG, "Inflated fragment_tab layout.");
 
         mRecyclerView = root.findViewById(R.id.recycler_view);
         mAdapter = new ArticleAdapter(getActivity(), mArticleList);
@@ -46,15 +53,15 @@ public class TabFragment extends Fragment {
         return root;
     }
 
-    public static ArrayList<Article> returnListByTopic(ArrayList<Article> list, String topic) {
-        ArrayList<Article> newList = new ArrayList<>();
+    public ArrayList<Article> getFragmentList() {
+        return mArticleList;
+    }
 
-        for (Article article : list) {
-            if (topic.equalsIgnoreCase(article.getTopic())) {
-                newList.add(article);
-            }
-        }
+    public ArticleAdapter getArticleAdapter() {
+        return mAdapter;
+    }
 
-        return newList;
+    public RecyclerView getFragmentRecycler() {
+        return mRecyclerView;
     }
 }
