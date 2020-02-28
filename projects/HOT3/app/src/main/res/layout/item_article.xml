@@ -14,6 +14,7 @@
         android:layout_marginStart="@dimen/margin_size"
         android:layout_marginTop="@dimen/margin_size"
         android:layout_marginEnd="@dimen/margin_size"
+        android:textSize="@dimen/font_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_size"
         android:layout_marginTop="@dimen/margin_size"
+        android:textSize="@dimen/font_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title"
         tools:text="Dillon S" />
@@ -35,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_size"
         android:layout_marginEnd="@dimen/margin_size"
+        android:textSize="@dimen/font_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_title"
         tools:text="8/01/2019" />

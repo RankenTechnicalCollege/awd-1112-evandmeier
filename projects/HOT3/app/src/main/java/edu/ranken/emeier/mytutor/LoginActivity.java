@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -56,6 +57,8 @@ public class LoginActivity extends AppCompatActivity {
         // get values from input fields
         String emailAddress = mEmailInput.getText().toString();
         String password = mPasswordInput.getText().toString();
+
+        mPasswordInput.setInputType(InputType.TYPE_NULL);
 
         if (!emailAddress.equals(correctEmail) || !password.equals(correctPassword)) {
             Log.d(TAG, "User failed login.");

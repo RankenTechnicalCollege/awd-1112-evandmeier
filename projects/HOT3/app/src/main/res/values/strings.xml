@@ -98,4 +98,5 @@
     <string name="text_topic">Topic</string>
     <string name="text_link">Link</string>
     <string name="login_error">Incorrect Email and/or Password</string>
+    <string name="text_article_title">Article Title</string>
 </resources>

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-
     <TextView
         android:id="@+id/text_email_address"
         android:layout_width="wrap_content"
@@ -14,6 +13,7 @@
         android:layout_marginStart="@dimen/margin_size"
         android:layout_marginTop="@dimen/margin_size"
         android:text="@string/text_email_address"
+        android:textSize="@dimen/font_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,6 +38,7 @@
         android:layout_marginStart="@dimen/margin_size"
         android:layout_marginTop="@dimen/margin_size"
         android:text="@string/text_password"
+        android:textSize="@dimen/font_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_email_address" />
 
@@ -62,6 +63,7 @@
         android:layout_marginTop="@dimen/margin_size"
         android:layout_marginEnd="@dimen/margin_size"
         android:text="@string/text_login"
+        android:textSize="@dimen/font_size"
         android:onClick="login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_password" />

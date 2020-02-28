@@ -20,7 +20,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_size"
             android:layout_marginTop="@dimen/margin_size"
-            android:text="Article Title"
+            android:text="@string/text_article_title"
+            android:textSize="@dimen/font_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,6 +45,7 @@
             android:layout_marginStart="@dimen/margin_size"
             android:layout_marginTop="@dimen/margin_size"
             android:text="@string/text_article_author"
+            android:textSize="@dimen/font_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_article_title" />
 
@@ -67,6 +69,7 @@
             android:layout_marginStart="@dimen/margin_size"
             android:layout_marginTop="@dimen/margin_size"
             android:text="@string/text_published_date"
+            android:textSize="@dimen/font_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_article_author" />
 
@@ -103,6 +106,7 @@
             android:layout_marginStart="@dimen/margin_size"
             android:layout_marginTop="@dimen/margin_size"
             android:text="@string/text_topic"
+            android:textSize="@dimen/font_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_published_date" />
 
@@ -124,6 +128,7 @@
             android:layout_marginStart="@dimen/margin_size"
             android:layout_marginTop="@dimen/margin_size"
             android:text="@string/text_link"
+            android:textSize="@dimen/font_size"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/topic_spinner" />
 
