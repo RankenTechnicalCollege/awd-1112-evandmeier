@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GitToGo</string>
+
+    <!-- Placeholder Text Items -->
+    <string name="placeholder_repo_name">Example Repo Name</string>
+    <string name="placeholder_repo_owner">Example Repo Owner</string>
+    <string name="placeholder_repo_desc">
+        This is an example of a repository description that will be returned
+        when a request is made to get a list of repositories that are
+        associated with a particular user.
+    </string>
+</resources>

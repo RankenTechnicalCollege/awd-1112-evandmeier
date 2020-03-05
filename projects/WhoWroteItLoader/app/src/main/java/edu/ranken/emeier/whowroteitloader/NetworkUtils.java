@@ -1,7 +1,9 @@
-package edu.ranken.emeier.whowroteit;
+package edu.ranken.emeier.whowroteitloader;
 
 import android.net.Uri;
 import android.util.Log;
+
+import org.json.JSONException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,19 +17,19 @@ public class NetworkUtils {
     private static final String LOG_TAG = NetworkUtils.class.getSimpleName();
 
     // Constants for the various components of the Books API request.
+    //
     // Base endpoint URL for the Books API.
     private static final String BOOK_BASE_URL =
-            "https://www.googleapis.com/books/v1/volumes?";
+            "https://www.googleapis.com/books/v1/volumes";
     // Parameter for the search string.
     private static final String QUERY_PARAM = "q";
     // Parameter that limits search results.
     private static final String MAX_RESULTS = "maxResults";
     // Parameter to filter by print type.
     private static final String PRINT_TYPE = "printType";
-    // Parameter to filter by download format
-    private static final String DOWNLOAD = "download";
 
-    static String getBookInfo(String queryString) {
+
+    static String getBookInfo(String queryString) throws IOException, JSONException {
 
         // Set up variables for the try block that need to be closed in the
         // finally block.
@@ -38,15 +40,13 @@ public class NetworkUtils {
         try {
             // Build the full query URI, limiting results to 10 items and
             // printed books.
-            Uri builtURI = Uri.parse(BOOK_BASE_URL)
-                    .buildUpon()
+            Uri builtURI = Uri.parse(BOOK_BASE_URL).buildUpon()
                     .appendQueryParameter(QUERY_PARAM, queryString)
                     .appendQueryParameter(MAX_RESULTS, "10")
                     .appendQueryParameter(PRINT_TYPE, "books")
-                    .appendQueryParameter(DOWNLOAD, "epub")
                     .build();
 
-            // Convert the URI to a URL,
+            // Convert the URI to a URL.
             URL requestURL = new URL(builtURI.toString());
 
             // Open the network connection.

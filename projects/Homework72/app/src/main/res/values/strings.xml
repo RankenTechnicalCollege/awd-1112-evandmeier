@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Homework72</string>
+    <string name="menu_title">Get Web Page Source Code</string>
+
+    <string-array name="labels_array">
+        <item>http://</item>
+        <item>https://</item>
+    </string-array>
+</resources>
