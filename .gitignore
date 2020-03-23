@@ -23,6 +23,9 @@ ehthumbs.db
 Thumbs.db
 desktop.ini
 
+#Ignore temporary Office files
+~$*
+
 # Built application files
 *.apk
 *.ap_
