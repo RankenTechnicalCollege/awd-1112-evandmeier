@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FortuneCookieLab</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="updated_just_now">Just Now</string>
+    <string name="toast_error">Error</string>
+    <string name="toast_refreshed">Refreshed</string>
+    <string name="updated_seconds_ago">%d seconds ago</string>
+    <string name="primary_channel_name">New Fortune</string>
+    <string name="primary_channel_description">Notification of new fortune cookie message.</string>
+</resources>
