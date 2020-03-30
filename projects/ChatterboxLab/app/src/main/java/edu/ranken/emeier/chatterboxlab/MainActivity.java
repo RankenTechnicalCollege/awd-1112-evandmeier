@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
         login();
+        Log.d(TAG, "Logged in via Button.");
     }
 
     public void login() {
