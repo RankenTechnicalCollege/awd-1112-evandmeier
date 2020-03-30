@@ -29,6 +29,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import edu.ranken.emeier.chatterboxlab.adapters.MessageAdapter;
 import edu.ranken.emeier.chatterboxlab.models.Message;
@@ -73,8 +75,13 @@ public class ChatroomActivity extends AppCompatActivity {
         // populate the RecyclerView with the current list of messages
         getMessages();
 
+        // get username from intent
         Intent intent = getIntent();
         username = intent.getStringExtra(MainActivity.EXTRA_USERNAME);
+
+        // setup timer
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new GetMessagesTask(), 0, 30000);
     }
 
     @Override
@@ -129,6 +136,14 @@ public class ChatroomActivity extends AppCompatActivity {
                         }
                     }
 
+                    // get the newest message
+                    Message newestMessage = messages.get(messages.size() - 1);
+                    if (!username.equals(newestMessage.getUser())) {
+                        // send notification
+                        ChatterboxApp app = (ChatterboxApp) getApplication();
+                        app.sendNotification(newestMessage.getUser(), newestMessage.getMessage());
+                    }
+
                     // create adapter with the updated list of messages
                     mAdapter = new MessageAdapter(this, messages);
 
@@ -179,6 +194,15 @@ public class ChatroomActivity extends AppCompatActivity {
         if (view != null) {
             InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
+    }
+
+    public class GetMessagesTask extends TimerTask {
+
+        @Override
+        public void run() {
+            getMessages();
+            Log.d(TAG, "GOT NEW MESSAGES!");
         }
     }
 }
