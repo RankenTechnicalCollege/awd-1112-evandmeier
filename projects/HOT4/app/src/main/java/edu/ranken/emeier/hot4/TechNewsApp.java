@@ -15,8 +15,10 @@ import android.util.Log;
 import androidx.core.app.NotificationCompat;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -65,14 +67,20 @@ public class TechNewsApp extends Application {
                         JSONObject item = items.getJSONObject(0);
 
                         mLastUpdated = item.getString("date_published");
+                        Log.i(TAG, mLastUpdated);
                     } catch (JSONException e) {
                         mLastUpdated = "Default";
+                        Log.i(TAG, mLastUpdated);
                     }
                 },
                 (VolleyError error) -> {
                     mLastUpdated = "Default";
+                    Log.i(TAG, mLastUpdated);
                 }
         );
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(request);
 
         Log.d(TAG, "App started!");
     }
