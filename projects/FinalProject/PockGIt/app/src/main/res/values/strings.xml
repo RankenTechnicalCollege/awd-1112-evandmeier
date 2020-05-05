@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PockGIt</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="text_app_description">
+        PockGit is an application that is designed to help developers keep track of the status of
+        their ongoing projects as they permeate through the software development life cycle. By
+        linking any of your Git-based online repositories to PockGit (as of now only GitHub is
+        supported), you enable all of PockGits features. Start by linking an account down below!
+    </string>
+    <string name="text_linked_accounts">Linked Accounts</string>
+    <string name="text_commit_notifications">Enable Commit Notifications:</string>
+    <string name="text_pull_notifications">Enable Pull Request Notifications:</string>
+    <string name="text_repositories">Repositories</string>
+    <string name="text_unlink">Unlink</string>
+    <string name="text_search_commits">Search Commits</string>
+    <string name="text_search_hints">Ex: Initial commit</string>
+    <string name="text_search">Search</string>
+</resources>
